@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+  background-image: linear-gradient(rgba(1, 14, 6, 0.76), rgba(1, 14, 6, 0.76)), url('images/bg/backgroundFt.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+    .login-box {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      padding: 30px 40px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.589);
+    }
+
+    .login-box img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .login-box h1 {
+      font-size: 24px;
+      color: #1c3d1c;
+      margin-bottom: 5px;
+    }
+
+    .login-box p {
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      background-color: #77c60b;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background-color: #032F0A;
+    }
+    label {
+  display: block;
+  text-align: left;
+  color: #032F0A;
+}
+  </style>
+
+
+
+</head>
+<body>
+  <div class="login-box">
+    <img src="images/logo-ptc.png" alt="School Logo">
+    <h1>Sign In</h1>
+    <p>Please log in your student account below.</p>
+    <form action="/submit-student-login" method="POST">
+      <label for="student-email" > Email:</label>
+      <input type="text" name="email" placeholder="Enter your institutional email" required>
+      <label for="student-password" >  Password:</label>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

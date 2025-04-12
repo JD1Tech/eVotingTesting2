@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PTC eVoting</title>
+   
+   <!--Link Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
+    <!--Link swiper JS from https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="images/logo-ptc.png" alt="Logo">
+            <span>Pateros Technological College</span>
+          </div>
+      
+          <div class="icons">
+            <span class="results"><i class="fa-solid fa-square-poll-vertical"></i></span>
+            <span class="accounts"><i class="fa-solid fa-users"></i></span>
+          </div>
+      
+          <div class="sub-menu-wrap" id="loginMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <h2>Login your account:</h2>
+                        <div class="account-links">
+                            <a href="StudentLogIn.html">Student Account</a>
+                            <a href="AdminLogIn.html">Admin Account</a>
+                        </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+
+<section id="announcement"> 
+    <h2>Announcement</h2> 
+    <p>No current announcements.</p>
+</section>
+
+
+<!--Candidate Section-->
+<section id="candidates">
+    <h2>Candidates</h2>
+    <div class="container swiper">
+        <div class="card-wrapper"></div>
+        <ul class="card-list swiper-wrapper">
+           
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="images/Candidates/candidate 1.jpg" alt="Candidate 1" class="card-image">
+                    <p class="badge">President</p>
+                    <h2 class="card-title">Candidate Name</h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                    </button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="images/Candidates/candidate 1.jpg" alt="Candidate 1" class="card-image">
+                    <p class="badge">Running for Vice President</p>
+                    <h2 class="card-title">Candidate Name</h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                    </button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="images/Candidates/candidate 1.jpg" alt="Candidate 1" class="card-image">
+                    <p class="badge">Running for Secretary</p>
+                    <h2 class="card-title">Candidate Name</h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                    </button>
+                </a>
+            </li>
+
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="images/Candidates/candidate 1.jpg" alt="Candidate 1" class="card-image">
+                    <p class="badge">Running for Treasurer</p>
+                    <h2 class="card-title">Candidate Name</h2>
+                    <button class="card-button material-symbols-rounded">
+                        arrow_forward
+                    </button>
+                </a>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        
+    </div>
+</section>
+
+
+<!-- partylist section -->
+<section id="partylist">
+    <h2>Party List</h2>
+    <div class="content">
+        <div class="items-links">
+            <span class="item-link menu-active" data-filter="all">ALL</span>
+            <span class="item-link" data-filter="itik">ITIK</span>
+            <span class="item-link" data-filter="love">LOVE</span>
+            <span class="item-link" data-filter="balot">BALOT</span>
+        </div>
+
+        <!-- Filter image -->
+        <div class="gallery">
+            <div class="party-img itik"><img src="images/Partylist/partylist1.jpg" alt="ITIK"></div>
+            <div class="party-img love"><img src="images/Partylist/partylist2.jpg" alt="LOVE"></div>
+            <div class="party-img balot"><img src="images/Partylist/partylist3.jpg" alt="BALOT"></div>
+            <div class="party-img itik"><img src="images/Partylist/partylist1.jpg" alt="ITIK"></div>
+            <div class="party-img love"><img src="images/Partylist/partylist2.jpg" alt="LOVE"></div>
+            <div class="party-img balot"><img src="images/Partylist/partylist3.jpg" alt="BALOT"></div>
+            <div class="party-img itik"><img src="images/Partylist/partylist1.jpg" alt="ITIK"></div>
+            <div class="party-img love"><img src="images/Partylist/partylist2.jpg" alt="LOVE"></div>
+            <div class="party-img balot"><img src="images/Partylist/partylist3.jpg" alt="BALOT"></div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    <div class="footer-content">
+        <p class="follow-title">Follow us:</p>
+
+        <ul class="social-logos">
+            <li class="social-item">
+                <a href="https://www.facebook.com/ptc1993">
+                    <img src="images/logo-ptc.png" alt="PTC Logo">
+                    <span>Pateros Technological College</span>
+                </a>
+            </li>
+
+            <li class="social-item">
+                <a href="https://www.facebook.com/ptcssc">
+                    <img src="images/logos/ssc-logo.png" alt="SSC Logo">
+                    <span>Supreme Student Council</span>
+                </a>
+            </li>
+
+            <li class="social-item">
+                <a href="https://www.facebook.com/ptc.theplumage">
+                    <img src="images/logos/plumage-logo.png" alt="Plumage Logo">
+                    <span>The Plumage</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+  
+<!--linking swiperJS script-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!--JS-->
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!--FOR account icon ref:  https://www.youtube.com/watch?v=ybXulmeilFM -->
